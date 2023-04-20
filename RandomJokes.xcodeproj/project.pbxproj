@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9960F9BB29F16B00001E6018 /* RandomJokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960F9BA29F16B00001E6018 /* RandomJokes.swift */; };
+		9960F9BE29F16F2C001E6018 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960F9BD29F16F2C001E6018 /* NetworkService.swift */; };
 		99C7A72929E9A85F00A24499 /* RandomJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C7A72829E9A85F00A24499 /* RandomJokesApp.swift */; };
 		99C7A72B29E9A85F00A24499 /* RandomJokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C7A72A29E9A85F00A24499 /* RandomJokesView.swift */; };
 		99C7A72D29E9A86000A24499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C7A72C29E9A86000A24499 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		9960F9BA29F16B00001E6018 /* RandomJokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokes.swift; sourceTree = "<group>"; };
+		9960F9BD29F16F2C001E6018 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		99C7A72529E9A85F00A24499 /* RandomJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C7A72829E9A85F00A24499 /* RandomJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokesApp.swift; sourceTree = "<group>"; };
 		99C7A72A29E9A85F00A24499 /* RandomJokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokesView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9960F9BC29F16F10001E6018 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9960F9BD29F16F2C001E6018 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		99C7A71C29E9A85F00A24499 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +71,9 @@
 		99C7A72729E9A85F00A24499 /* RandomJokes */ = {
 			isa = PBXGroup;
 			children = (
-				9960F9B929F16AC7001E6018 /* Model */,
+				9960F9BC29F16F10001E6018 /* NetworkService */,
 				99C7A72829E9A85F00A24499 /* RandomJokesApp.swift */,
+				9960F9B929F16AC7001E6018 /* Model */,
 				99C7A73629E9A86A00A24499 /* Views */,
 				99C7A72C29E9A86000A24499 /* Assets.xcassets */,
 				99C7A72E29E9A86000A24499 /* Preview Content */,
@@ -158,6 +169,7 @@
 			files = (
 				99C7A72B29E9A85F00A24499 /* RandomJokesView.swift in Sources */,
 				99C7A72929E9A85F00A24499 /* RandomJokesApp.swift in Sources */,
+				9960F9BE29F16F2C001E6018 /* NetworkService.swift in Sources */,
 				9960F9BB29F16B00001E6018 /* RandomJokes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct RandomJokesView: View {
+    
+    
     @State var punchlineOpacity = 0.0
+    @State var currentRandomJokes = exampleRandomJokes
+    
     var body: some View {
         NavigationView{
             VStack{
                 Text("Yousee, mountain aren't just funny ")
+                Text(currentRandomJokes.setup)
                     .font(.title)
                     .multilineTextAlignment(.center)
                 
                 Button (action: {
-                    punchlineOpacity = 1.0
-                }, lable: {
+                    withAnimation(.easeIn(duration: 1.0)) {
+                        punchlineOpacity = 1.0
+                    }
+                }, labellabel: {
                     Image(systemName: "arrow.down.circle.fill")
                         .resizable()
                         .scaledToFit()
@@ -26,17 +33,18 @@ struct RandomJokesView: View {
                         .tint(.black)
                 })
                 Text("They are hill areas.")
+                Text(currentRandomJokes.punchline)
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .opacity(punchlineOpacity)
             }
             .navigationTitle("Random Jokes")
-            
         }
     }
-    struct RandomJokes_previews: PreviewProvider{
-        static var previews: some View{
-            RandomJokesView()
-            
-        }
+}
+struct RandomJokes_previews: PreviewProvider{
+    static var previews: some View{
+        RandomJokesView()
         
+    }
+    
